@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class AuthService {
   constructor(private http: HttpClient) {}
 
-  login(credentials: { email: string; password: string }) {
-    return this.http.post('https://your-api-endpoint/login', credentials);
+  login(credentials: { username: string; password: string }) {
+    return this.http.post('https://localhost:7032/api/Auth/login', credentials);
   }
 }

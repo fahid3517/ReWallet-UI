@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" class="header-toolbar">
+    <span class="app-title">ReWallet</span>
+    <span class="spacer"></span>
+    <button mat-button [matMenuTriggerFor]="userMenu">
+      <mat-icon>account_circle</mat-icon> Username
+    </button>
+    <mat-menu #userMenu="matMenu">
+      <button mat-menu-item>Manage Account</button>
+      <button mat-menu-item>Log out</button>
+    </mat-menu>
+  </mat-toolbar>

@@ -1,4 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+// styles.scss
+$primary-color: #1baf63; // green
+$accent-color: #f3c500; // yellow
+$background-color: #f6f8fa; // light background
+$card-background: #ffffff; // white cards
+$text-color: #333333; // dark text
+
+// body {
+//   font-family: 'Roboto', sans-serif;
+//   background-color: $background-color;
+//   color: $text-color;
+//   margin: 0;
+//   padding: 0;
+// }
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .sidenav-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .router-outlet {
+    padding: 16px;
+    flex-grow: 1;
+    overflow: auto;
+  }
+  

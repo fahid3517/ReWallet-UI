@@ -1,27 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AuthRoutingModule } from './auth-routing.module';
-import { AuthComponent } from './auth.component';
-import { LoginComponent } from './login/login.component';
+import { StoreRoutingModule } from './store-routing.module';
+import { StoreComponent } from './store.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AddStoreComponent } from './add-store/add-store.component';
+import { ManageStoreComponent } from './manage-store/manage-store.component';
 
 
 @NgModule({
   declarations: [
-    AuthComponent,
-    LoginComponent
+    StoreComponent,AddStoreComponent,ManageStoreComponent
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    ReactiveFormsModule
+    StoreRoutingModule
   ]
 })
-export class AuthModule { }
+export class StoreModule { }
